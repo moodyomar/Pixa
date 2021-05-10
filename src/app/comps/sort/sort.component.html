@@ -1,0 +1,12 @@
+<div class="container-fluid d-flex">
+     <div class="col-md-6 d-flex align-items-center mt-2">
+          <label class="me-2">Sort By: </label>
+     <select (change)="onSortChange()" class="form-select w-25" [(ngModel)]="sortSelect">
+          <option value="likes">Likes</option>
+          <option value="views">Viewes</option>
+          <option value="favorites">Favorites</option>
+     </select>
+     </div>
+     <div class="col-md-6 d-flex align-items-center justify-content-center">
+     </div>
+</div>

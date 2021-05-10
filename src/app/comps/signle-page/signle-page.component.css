@@ -1,0 +1,16 @@
+a{
+     border-radius: 20px;
+     width: 150px;
+}
+span{
+     color: rgba(99, 99, 99, 0.619);
+}
+.hoverable:hover{
+     opacity: 1;
+     transform: scale(1.025);
+     transition: all .2s ease-in;
+}
+.hoverable{
+     opacity: 0.8;
+     transition: all .15s ease-out;
+}

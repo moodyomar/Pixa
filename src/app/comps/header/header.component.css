@@ -1,0 +1,18 @@
+nav a{
+     padding: 0 12px; 
+}
+nav a:hover{
+     color: #0B6EFD;
+     cursor: pointer;
+}
+button{
+     border-radius: 20px;
+     width: 100px;
+}
+.logo{
+     color: #fff;
+}
+.logo:hover{
+color: #0B6EFD;
+transition: all .3s ease;
+}

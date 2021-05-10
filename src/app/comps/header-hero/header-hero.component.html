@@ -1,0 +1,11 @@
+<div class="container-fluid bg-dark hero d-flex justify-content-center
+align-items-center dire">
+    <div class="col-md-6 flex-column">
+        <h3 class="text-center text-white">Stunning free images & royalty free stock</h3>
+        <div class="d-flex mt-5">
+            <input type="text" class="form-control" placeholder="Search images..." [(ngModel)]="searchQ">
+            <button (click)="doApiSearch()" class="btn btn-primary ms-2">Search</button>
+        </div>
+    </div>
+</div>
+<app-sort></app-sort>

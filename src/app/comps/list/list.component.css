@@ -1,0 +1,24 @@
+.hoverable:hover{
+     transform: scale(1.05);
+     transition: all .2s ease-in;
+}
+.hoverable{
+     transition: all .15s ease-out;
+}
+.picDetails{
+     padding: 10px;
+     color: #fff;
+     position: relative;
+     transition: all .2s ease-out;
+     transform: translateY(-0%);
+}
+.hoverable:hover .picDetails{
+    transform: translateY(-110%);
+    transition: all .2s ease-in;
+}
+.picDetails div{
+     width: 30%;
+     border-radius: 10px;
+     text-align: center;
+     background-color: rgba(0, 0, 0, 0.256);
+}
