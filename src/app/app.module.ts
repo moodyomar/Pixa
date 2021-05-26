@@ -10,6 +10,7 @@ import { ListComponent } from './comps/list/list.component';
 import { HeaderHeroComponent } from './comps/header-hero/header-hero.component';
 import { SignlePageComponent } from './comps/signle-page/signle-page.component';
 import { HeaderComponent } from './comps/header/header.component';
+import { FooterComponent} from './comps/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HeaderComponent } from './comps/header/header.component';
     HeaderHeroComponent,
     SignlePageComponent,
     HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
