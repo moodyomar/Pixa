@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { PixaService } from '../../services/pixa.service';
 
@@ -6,9 +7,12 @@ import { PixaService } from '../../services/pixa.service';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
+
 export class ListComponent implements OnInit {
   imagesAr:any[] = []
-  constructor(private pixaSer:PixaService) { }
+
+  
+  constructor(private pixaSer:PixaService,private scroll: ViewportScroller) { }
 
   ngOnInit(): void {
     this.imagesAr = this.pixaSer.getImages();
@@ -17,6 +21,11 @@ export class ListComponent implements OnInit {
     this.pixaSer.doApiList(url)
     console.log(this.imagesAr)
   }
+
+  scrollToTop(){
+    this.scroll.scrollToPosition([0,0]);
+    console.log("triggered")
+}
 
 }
 
